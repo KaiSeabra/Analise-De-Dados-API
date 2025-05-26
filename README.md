@@ -4,20 +4,21 @@ API de análise de dados de varejo usando múltiplos paradigmas de banco de dado
 
 ## Funcionalidades ✨
 
-* 📦 Cadastro e listagem de produtos (modelo objeto-relacional com NeDB)
-* 💬 Armazenamento de comentários de clientes (MongoDB)
-* 📈 Data Warehouse com histórico de vendas (SQLite)
-* ⏳ Análise temporal de preços e estoque ao longo do tempo
-* 🔗 API REST com Express para acesso aos dados
+* 📦 Cadastro e listagem de produtos (modelo objeto-relacional com NeDB)  
+* 💬 Armazenamento de comentários de clientes (MongoDB)  
+* 📈 Data Warehouse com histórico de vendas (SQLite)  
+* ⏳ Análise temporal de preços e estoque ao longo do tempo  
+* 🔗 API REST com Express para acesso aos dados  
+* 🖥️ Dashboard web simples para visualização rápida dos dados  
 
 ## Tecnologias 🛠️
 
-* Node.js
-* Express.js
-* NeDB (substituto leve do ObjectDB)
-* MongoDB
-* SQLite (Data Warehouse)
-* sqlite3
+* Node.js  
+* Express.js  
+* NeDB (substituto leve do ObjectDB)  
+* MongoDB  
+* SQLite (Data Warehouse)  
+* sqlite3  
 
 ## Instalação ⚙️
 
@@ -39,19 +40,16 @@ npm install
 * Usando Docker (recomendado):
 
   ```bash
+  docker run -d -p 27017:27017 --name mongodb mongo
   ```
 
-docker run -d -p 27017:27017 --name mongodb mongo
-
-````
-
-- Ou instalação local: [MongoDB Community](https://www.mongodb.com/try/download/community)
+* Ou instalação local: [MongoDB Community](https://www.mongodb.com/try/download/community)
 
 4. **Popule o banco MongoDB**
 
 ```bash
 node populate-mongo.js
-````
+```
 
 5. **Inicie o servidor**
 
@@ -59,7 +57,13 @@ node populate-mongo.js
 node app.js
 ```
 
-Acesse: `http://localhost:3000`
+6. **Acesse a dashboard**
+
+Abra no navegador:
+
+```
+http://localhost:3000/dashboard.html
+```
 
 ---
 
@@ -102,6 +106,31 @@ GET /historic
 ```
 
 📈 Retorna variação de preço e estoque por produto ao longo do tempo
+
+---
+
+## Dashboard Web 🖥️
+
+Além da API, o projeto inclui uma **dashboard simples e leve** para facilitar a visualização dos dados em formato textual.
+
+### Como acessar:
+
+- Inicie o servidor (`node app.js`)
+- Abra no navegador o endereço:  
+  `http://localhost:3000/dashboard.html`
+
+### O que a dashboard mostra:
+
+- **Lista de Produtos**: com detalhes de id, nome, categoria, preço e estoque  
+- **Comentários dos Clientes**: exibindo o cliente, produto relacionado e comentário  
+- **Relatório de Vendas**: resumo das vendas por produto, mês e total vendido  
+- **Histórico de Preços e Estoque**: mostrando a variação mensal de preços e estoque por produto
+
+### Por que usar a dashboard?
+
+- Visualização rápida sem necessidade de consumir a API manualmente  
+- Interface leve, sem gráficos pesados para performance rápida  
+- Útil para quem quer acompanhar o estado do sistema em tempo real durante desenvolvimento ou demonstração  
 
 ---
 
@@ -149,6 +178,6 @@ CREATE TABLE fatos_vendas (
 
 ## Sobre o Projeto 📘
 
-Este sistema foi desenvolvido com fins didáticos e academicos, para demonstrar a integração de diferentes paradigmas de banco de dados em um único sistema Node.js funcional e principalmente o mais simples possivel para ajudar com o aprendizado, com foco em análise de dados de vendas e comportamento do consumidor.
+Este sistema foi desenvolvido com fins didáticos e acadêmicos, para demonstrar a integração de diferentes paradigmas de banco de dados em um único sistema Node.js funcional, simples e didático, com foco em análise de dados de vendas e comportamento do consumidor.
 
 ---
