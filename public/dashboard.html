@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📊 Dashboard - Análise de Varejo 🛍️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📊 Dashboard - Análise de Varejo 🛍️</h1>
+
+  <section>
+    <h2>📦 Produtos</h2>
+    <table id="products-table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Nome</th><th>Categoria</th><th>Preço Atual</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>💬 Comentários de Clientes</h2>
+    <table id="comments-table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Produto ID</th><th>Cliente</th><th>Comentário</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>📈 Relatório de Vendas</h2>
+    <table id="sales-report-table">
+      <thead>
+        <tr>
+          <th>Produto</th><th>Data</th><th>Quantidade</th><th>Total (R$)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🗓️ Histórico de Preços e Estoque</h2>
+    <table id="historic-table">
+      <thead>
+        <tr>
+          <th>Produto</th><th>Data</th><th>Preço (R$)</th><th>Estoque</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

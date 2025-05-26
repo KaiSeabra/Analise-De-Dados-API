@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem;
+  background-color: #f3f6fd;
+  color: #222;
+}
+
+h1, h2 {
+  color: #1e2a78;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px #a4b0f5;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(30, 42, 120, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 15px rgba(30, 42, 120, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid #d1d9ff;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #c4cdf9;
+  color: #0a1b80;
+}
+
+tbody tr:hover {
+  background-color: #e7ecff;
+}
+
+h2::before {
+  content: "⭐ ";
+  color: #6f7cfa;
+}
+
+h1::before {
+  content: "🚀 ";
+}
+
+#products-table th:first-child,
+#products-table td:first-child {
+  font-weight: bold;
+  color: #34495e;
+}
+
+#comments-table th:nth-child(3),
+#comments-table td:nth-child(3) {
+  color: #2c3e50;
+  font-style: italic;
+}
+
+#sales-report-table,
+#historic-table {
+  font-family: 'Courier New', Courier, monospace;
+  color: #34495e;
+}
