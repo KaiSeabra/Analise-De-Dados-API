@@ -1,0 +1,10 @@
+{"nome":"Camiseta","categoria":"Roupas","preco":50,"estoque":100,"_id":"6Prs5GpdacLA1uaM"}
+{"nome":"Jaqueta","categoria":"Roupas","preco":250,"estoque":30,"_id":"CBmlfo9G1wsftQ3n"}
+{"nome":"Óculos de Sol","categoria":"Acessórios","preco":150,"estoque":45,"_id":"NiVDQXfaU7d4hWpS"}
+{"nome":"Sandália","categoria":"Calçados","preco":90,"estoque":70,"_id":"Tjgw1PmxKghNmxj4"}
+{"nome":"Boné","categoria":"Acessórios","preco":35,"estoque":80,"_id":"VGlfB52PZX3Oqcnk"}
+{"nome":"Meias","categoria":"Roupas","preco":15,"estoque":200,"_id":"gY2sxT6TM74RFETU"}
+{"nome":"Bermuda","categoria":"Roupas","preco":60,"estoque":50,"_id":"hH8pJEM5rBN1EFiC"}
+{"nome":"Tênis","categoria":"Calçados","preco":200,"estoque":40,"_id":"hnL4B6nctmQ3CbHh"}
+{"nome":"Calça Jeans","categoria":"Roupas","preco":120,"estoque":60,"_id":"qneSwkO7OpcPnwhF"}
+{"nome":"Relógio","categoria":"Acessórios","preco":300,"estoque":25,"_id":"yIS4SmVFFYllkTG5"}
