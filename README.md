@@ -26,7 +26,7 @@ API de análise de dados de varejo usando múltiplos paradigmas de banco de dado
 
 ```bash
 git clone https://github.com/KaiSeabra/Analise-De-Dados-API
-cd retail-analytics-api
+cd Analise-De-Dados-API
 ```
 
 2. **Instale as dependências**
