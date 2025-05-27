@@ -48,7 +48,7 @@ npm install
 4. **Popule o banco MongoDB**
 
 ```bash
-node populate-mongo.js
+node mongo-seed.js
 ```
 
 5. **Inicie o servidor**
